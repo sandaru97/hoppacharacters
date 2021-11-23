@@ -13,12 +13,13 @@ export default function App() {
     "width":"100%",
 }}
 style={styles.container} >
-  <Text style={styles.title}>Players</Text>
+  <Text  style={styles.title}>&lt; Players (1/20) &gt;</Text>
  
-   <img style={{width:"80%",}}
+   <img style={{width:"70%",}}
    src={players[selectedCharacterId]['image']}
    resizeMode={'cover'} // cover or contain its upto you view look
    />
+   <br/>
       <Text style={styles.playerName}>{players[selectedCharacterId]['name']}</Text>
       <Text style={styles.description}>{players[selectedCharacterId]['description']}</Text>
       <Text></Text>
@@ -27,20 +28,23 @@ style={styles.container} >
       <button 
       style={{
         "fontSize": "7vw",
-        padding:"5px",
-
+        padding:"10px",
+        "margin":"10px",
+color:"#000000"
       }} 
->*
+><b>&nbsp;&lt;&nbsp;</b>
 
 </button><button 
       style={{
         "fontSize": "7vw",
-        padding:"5px",
+        padding:"10px",
         "margin":"10px",
-color:"#3581b8"
+color:"#000000",
+
       }} 
->
+><b>
 BUY 0.99$
+</b>
 </button>
       </View>
     </View>
@@ -48,6 +52,10 @@ BUY 0.99$
 }
 
 const styles = StyleSheet.create({
+  description:{
+    fontSize:"5vw",
+    justifyContent:"center",
+  },
   title:{
     position: "absolute",
 
@@ -80,10 +88,11 @@ padding:"10px",
   justifyContent: 'flex-end',
 },
   playerName:{
-    "font-size":"7vw",
+    "font-size":"8vw",
     "font-weight":"bold",
   },description:{
     "font-size":"5vw",
+    
   },
   container: {
     "border-bottom":"10px solid #eb9486",
@@ -100,5 +109,6 @@ padding:"10px",
     alignItems: 'center',
     justifyContent: 'center',
 "align-items":"center",
+textAlign: 'center',
   },
 });

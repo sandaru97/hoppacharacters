@@ -1,12 +1,13 @@
 export const players =  { 
     '1': { 
       name: 'Homer', 
-      description: 'DOugh!! ', 
+      description: 'DOugh!! This classic character is for simpsons fans. ', 
       active: 1, 
-      description: 'Dough!!', 
+      description: 'DOugh!! This classic character is for simpsons fans.  Can homer e the one??', 
       priceCoin: 'Meow', 
-      priceDollar: 'Meow', 
-      image: '', 
+      jumpSound: 'Meow', 
+      Music: 'Meow', 
+      image: 'https://i.ibb.co/c8LhfNp/5eb95c9517f3c600044a2911.png', 
   
   
   
