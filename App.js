@@ -5,10 +5,12 @@ import { StyleSheet, Text, View } from 'react-native';
 import { players } from "./players";
 
 
-export default function App() {
-  var selectedCharacterId=1;
-  return (
-    <View style={{
+class PlayerDisplay extends React.Component {
+  
+  render() {
+    var selectedCharacterId=this.props.id;
+
+    return <View style={{
       "height":"100%",
     "width":"100%",
 }}
@@ -34,7 +36,7 @@ color:"#000000"
       }} 
 ><b>&nbsp;&lt;&nbsp;</b>
 
-</button><button 
+</button><button  onClick={selectedCharacterId=1}
       style={{
         "fontSize": "7vw",
         padding:"10px",
@@ -47,7 +49,13 @@ BUY 0.99$
 </b>
 </button>
       </View>
-    </View>
+    </View>;
+  }
+}
+
+export default function App() {
+  return (
+    <PlayerDisplay id="3"/>
   );
 }
 
