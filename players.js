@@ -8,7 +8,7 @@ export const players =  {
       priceDollar: 'Meow', 
       jumpSound: 'Meow', 
       Music: 'Meow', 
-      image: 'C:/Users/User/Desktop/Hoppa Characters/hoppa-characters/assets/homer.png', 
+      image: 'assets/homer.png', 
   
   
   

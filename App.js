@@ -1,6 +1,6 @@
 import {StatusBar} from 'expo-status-bar';
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View,Image} from 'react-native';
 
 import {players} from "./players";
 
@@ -37,8 +37,8 @@ class PlayerDisplay extends React.Component {
                     {width: "70%"}
                 }
                 src={
-                 
-                    players[this.state.id]['image']
+                  
+                  require("./assets/homer.png")
                 }
                 resizeMode={'cover'}
                 // cover or contain its upto you view look
