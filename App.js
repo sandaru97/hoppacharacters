@@ -4,7 +4,7 @@ import {StyleSheet, Text, View,Image} from 'react-native';
 
 import {players} from "./players";
 
-var selectedCharacterIdGlobal = 1;
+//var selectedCharacterIdGlobal = 1;
 class PlayerDisplay extends React.Component {
     constructor(props) {
         super(props);
@@ -31,15 +31,13 @@ class PlayerDisplay extends React.Component {
                 styles.title
             }>&lt; Players (1/20) &gt;</Text>
 
-            <img 
+            <Image 
             alt="Error Loading Characters. Please try again!"
-            style={
-                    {width: "70%"}
-                }
-                src={
-                  
-                  require("./assets/homer.png")
-                }
+            style={{
+                    width: "70%",
+                }}
+                source={{ uri: String.raw(players[this.state.id]['image']) }}
+
                 resizeMode={'cover'}
                 // cover or contain its upto you view look
             />
@@ -97,7 +95,7 @@ class PlayerDisplay extends React.Component {
 
 export default function App() {
     return (
-        <PlayerDisplay id={selectedCharacterIdGlobal}/>
+        <PlayerDisplay id={1}/>
     );
 }
 

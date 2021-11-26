@@ -8,7 +8,7 @@ export const players =  {
       priceDollar: 'Meow', 
       jumpSound: 'Meow', 
       Music: 'Meow', 
-      image: 'assets/homer.png', 
+      image: "/assets/homer.png", 
   
   
   
@@ -22,7 +22,7 @@ export const players =  {
       priceCoin: 'Meow', 
       jumpSound: 'Meow', 
       Music: 'Meow', 
-      image: '/assets/kurt.png', 
+      image: "../assets/kurt.png", 
   
   
   
