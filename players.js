@@ -1,40 +1,41 @@
 export const players =  { 
     '1': { 
       name: 'Homer', 
-      description: 'DOugh!! This classic character is for simpsons fans. ', 
+      description: 'Dough!! ', 
       active: 1, 
-      description: 'DOugh!! This classic character is for simpsons fans.  Can homer e the one??', 
+     // description: 'Dough!! This classic character is for simpsons fans. ', 
       priceCoin: 'Meow', 
+      priceDollar: 'Meow', 
       jumpSound: 'Meow', 
       Music: 'Meow', 
-      image: 'https://i.ibb.co/c8LhfNp/5eb95c9517f3c600044a2911.png', 
+      image: 'C:/Users/User/Desktop/Hoppa Characters/hoppa-characters/assets/homer.png', 
   
   
   
       _id: 1 
     },
     '2': { 
-      name: 'Homer', 
-      description: 'DOugh!! This classic character is for simpsons fans. ', 
+      name: 'Kurt', 
+      description: 'Smellls like teen spirit', 
       active: 1, 
       description: 'DOugh!! This classic character is for simpsons fans.  Can homer e the one??', 
       priceCoin: 'Meow', 
       jumpSound: 'Meow', 
       Music: 'Meow', 
-      image: 'https://i.ibb.co/c8LhfNp/5eb95c9517f3c600044a2911.png', 
+      image: '/assets/kurt.png', 
   
   
   
       _id: 1  
       },
       '3': { 
-        name: 'Kittty 3', 
+        name: 'Kittty', 
         description: 'Meow', 
         active: 1, 
         description: 'Meow', 
         priceCoin: 'Meow', 
         priceDollar: 'Meow', 
-        image: 'https://t3.ftcdn.net/jpg/02/66/08/38/360_F_266083810_zGmRdMbOVoIa9kRoe9ivR3KETGxJNg6C.jpg', 
+        image: '/assets/char1.png', 
     
     
     
