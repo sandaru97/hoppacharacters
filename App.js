@@ -4,6 +4,8 @@ import {StyleSheet, Text, View,Image} from 'react-native';
 
 import {players} from "./players";
 
+import Images from './Images';
+
 //var selectedCharacterIdGlobal = 1;
 class PlayerDisplay extends React.Component {
     constructor(props) {
@@ -17,6 +19,7 @@ class PlayerDisplay extends React.Component {
     }
     render() {
         var selectedCharacterId = this.props.id;
+var imgPath=players[this.state.id]['image'];
 
         return <View style={
                 {
@@ -30,17 +33,13 @@ class PlayerDisplay extends React.Component {
             <Text style={
                 styles.title
             }>&lt; Players (1/20) &gt;</Text>
+   <Image style={{
+                    width: "70vw",
+                    height:"70vw",
+                }} 
+                source = {imgPath} />
 
-            <Image 
-            alt="Error Loading Characters. Please try again!"
-            style={{
-                    width: "70%",
-                }}
-                source={{ uri: String.raw(players[this.state.id]['image']) }}
-
-                resizeMode={'cover'}
-                // cover or contain its upto you view look
-            />
+            
             <br/>
             <Text style={
                 styles.playerName
@@ -111,7 +110,7 @@ const styles = StyleSheet.create({
         top: "15px"
     },
     button: {
-        "fontSize": "18",
+        fontSize: "18",
         padding: "10px",
         "font-size": "3vw",
         "width": "10px",
@@ -136,11 +135,11 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-end'
     },
     playerName: {
-        "font-size": "8vw",
+        fontSize: "8vw",
         "font-weight": "bold"
     },
     description: {
-        "font-size": "5vw"
+        fontSize: "5vw"
 
     },
     container: {

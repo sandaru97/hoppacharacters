@@ -8,10 +8,7 @@ export const players =  {
       priceDollar: 'Meow', 
       jumpSound: 'Meow', 
       Music: 'Meow', 
-      image: "/assets/homer.png", 
-  
-  
-  
+      image: require('./assets/Images/Homer.png'), 
       _id: 1 
     },
     '2': { 
